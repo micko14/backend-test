@@ -18,4 +18,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('products', 'Api\ProductController@index');
+
+
+Route::get('news', 'Api\NewsController@index');
+
+// List single news
+Route::get('news/{news}', 'Api\NewsController@show');
+
+// Create new news
+Route::post('news', 'Api\NewsController@store');
+
+// Update news
+Route::put('news/{news}', 'Api\NewsController@update');
+
+// Delete news
+Route::delete('news/{news}', 'Api\NewsController@destroy');
+
+
