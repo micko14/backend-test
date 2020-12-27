@@ -1,7 +1,6 @@
 # Vue.js + Laravel SPA + Vuetify
 
 ## Instructions
-
 - Clone the repository with `git clone`
 - Copy `.env.example` file to `.env` and edit database credentials there
 - Run `composer install`
@@ -10,6 +9,7 @@
 - Run `npm install`
 - Run `npm run dev`
 - That's it: launch the main URL. 
+- Create a database called news and run the migrations
 
 
 
